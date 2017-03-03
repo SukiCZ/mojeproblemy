@@ -1,6 +1,7 @@
 ---
 layout: page
-title: About
+title: About.old
+hidden: true
 ---
 
 <p class="message">
@@ -28,3 +29,5 @@ Some fun facts about the setup of this project include:
 Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
 
 Thanks for reading!
+
+<a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a> theme made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.
