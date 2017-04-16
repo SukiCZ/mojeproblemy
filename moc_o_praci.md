@@ -4,7 +4,7 @@ title: Moc mluvim o práci
 ---
 
 
-Moje práce mě baví a furt o ní mluvim. Mým povoláním je převážně backend developer jedné REST API. Je to větší projekt než já, začínal vznikat v půlce roku 2013 a od té doby na něm spolupracovalo ~20 lidí. Je psanej v jazyce Python, kterej je strašně skvělej! Něco ti ukážu..
+Moje práce mě baví a furt o ní mluvim! Jsem backend developer jedné REST API. Je to vcelku velký projekt. Začínal vznikat v půlce roku 2013 a od té doby na něm spolupracovalo ~20 lidí. Je to e-shop, který běží na dvou produkčních serverech v sedmi regionech a deseti jazykových mutací. Je to náhrada našeho staršího katalogu, který používal stejně staré technologie, nebyl tak jednoduše rozšiřitelnej a vůbec - code base vlastnila externí firma. Je psanej v jazyce Python, kterej je strašně skvělej! Něco ti ukážu..
 
 {% highlight python %}
 >>> x = [1, 2, 3]  # array 3 čísel
@@ -22,7 +22,7 @@ None
 
 {% endhighlight%}
 
-Jednou jsem takhle řešil, jakou cenu má ta API zobrazovat na detailu produktu, ke kterému se vztahují dodací podmínky s různou cenou a na detailu produktu se tak měla zobrazovat ta nejnižší. Potřeboval jsem minimum z array listu, kterej ovšem mohl bejt prázdnej..
+Jednou jsem takhle řešil, jakou cenu má ta API zobrazovat na detailu produktu, ke kterému se vztahují dodací podmínky s různou cenou (array `x`, dodací podmínky můžou být prázdné) a na detailu produktu se tak měla zobrazovat ta nejnižší. Minimum z prázdného listu vrací chybu..
 
 {% highlight python %}
 >>> print min([])
@@ -32,4 +32,6 @@ ValueError: min() arg is an empty sequence
 
 {% endhighlight %}
 
-..a tak jsem ho chtěl rozšířit o maloobchodní cenu produktu. Sečtení to v pořádku vyřešilo. :-\|
+..a tak jsem ho musel rozšířit o maloobchodní cenu produktu. Extend to neřešil. Poznámka pro přístě:
+
+* Iterace listu se sčítají - nerozšiřují
